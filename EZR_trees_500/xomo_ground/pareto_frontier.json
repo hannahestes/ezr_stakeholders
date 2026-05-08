@@ -1,0 +1,143 @@
+{
+  "dataset": "xomo_ground",
+  "total_trees": 500,
+  "frontier_size": 11,
+  "frontier": [
+    {
+      "run": 278,
+      "accuracy": 100,
+      "stability": 15.8,
+      "tree_complexity": 0.2,
+      "features": [
+        "KLOC",
+        "ETAT",
+        "FLEx",
+        "RELY"
+      ],
+      "raw_output": "\nFile:\t moot_process_raw_data/xomo_ground.csv\nRows:\t 10000\nX:\t 24\nY:\t 4 EFFORT- MONTHS- DEFECTS- RISKS-\n \nn:  16   win:   30     if KLOC <= 96.775\nn:   6   win:   70     |  if KLOC <= 29.154;\nn:  10   win:    6     |  if KLOC > 29.154\nn:   4   win:   31     |  |  if RELY > 3.202;\nn:   6   win:  -10     |  |  if RELY <= 3.202;\nn:  14   win:  -75     if KLOC > 96.775\nn:   8   win:  -39     |  if ETAT > 4.225\nn:   5   win:  -22     |  |  if FLEx <= 2.796;\nn:   3   win:  -68     |  |  if FLEx > 2.796;\nn:   6   win: -123     |  if ETAT <= 4.225;\n\nUsed:  KLOC ETAT FLEx RELY\nBest train: 86 hold-out: 100\n"
+    },
+    {
+      "run": 451,
+      "accuracy": 93,
+      "stability": 16.8,
+      "tree_complexity": 0.25,
+      "features": [
+        "KLOC",
+        "DATA",
+        "AEXP",
+        "ETAT",
+        "PLEx"
+      ],
+      "raw_output": "\nFile:\t moot_process_raw_data/xomo_ground.csv\nRows:\t 10000\nX:\t 24\nY:\t 4 EFFORT- MONTHS- DEFECTS- RISKS-\n \nn:  18   win:   14     if KLOC <= 117.562\nn:  10   win:   37     |  if KLOC <= 54.418\nn:   6   win:   53     |  |  if DATA > 2.602;\nn:   4   win:   15     |  |  if DATA <= 2.602;\nn:   8   win:  -14     |  if KLOC > 54.418\nn:   4   win:   16     |  |  if ETAT <= 3.216;\nn:   4   win:  -45     |  |  if ETAT > 3.216;\nn:  12   win: -109     if KLOC > 117.562\nn:   3   win:  -20     |  if AEXP > 4.16;\nn:   9   win: -139     |  if AEXP <= 4.16\nn:   4   win:  -94     |  |  if PLEx <= 2.566;\nn:   5   win: -175     |  |  if PLEx > 2.566;\n\nUsed:  KLOC DATA AEXP ETAT PLEx\nBest train: 80 hold-out: 93\n"
+    },
+    {
+      "run": 57,
+      "accuracy": 91,
+      "stability": 18.0,
+      "tree_complexity": 0.2,
+      "features": [
+        "KLOC",
+        "RELY",
+        "ETAT",
+        "STOR"
+      ],
+      "raw_output": "\nFile:\t moot_process_raw_data/xomo_ground.csv\nRows:\t 10000\nX:\t 24\nY:\t 4 EFFORT- MONTHS- DEFECTS- RISKS-\n \nn:  18   win:    3     if RELY > 2.449\nn:   4   win:   68     |  if KLOC <= 36.757;\nn:  14   win:  -15     |  if KLOC > 36.757\nn:   9   win:    2     |  |  if RELY <= 3.184\nn:   4   win:   18     |  |  |  if STOR <= 3.247;\nn:   5   win:  -10     |  |  |  if STOR > 3.247;\nn:   5   win:  -46     |  |  if RELY > 3.184;\nn:  12   win:  -91     if RELY <= 2.449\nn:   9   win:  -58     |  if KLOC <= 218.985\nn:   5   win:  -33     |  |  if ETAT > 3.361;\nn:   4   win:  -90     |  |  if ETAT <= 3.361;\nn:   3   win: -189     |  if KLOC > 218.985;\n\nUsed:  KLOC RELY ETAT STOR\nBest train: 82 hold-out: 91\n"
+    },
+    {
+      "run": 311,
+      "accuracy": 89,
+      "stability": 17.0,
+      "tree_complexity": 0.15,
+      "features": [
+        "KLOC",
+        "DOCU",
+        "STOR"
+      ],
+      "raw_output": "\nFile:\t moot_process_raw_data/xomo_ground.csv\nRows:\t 10000\nX:\t 24\nY:\t 4 EFFORT- MONTHS- DEFECTS- RISKS-\n \nn:   6   win:   48     if KLOC <= 35.63;\nn:  24   win:  -53     if KLOC > 35.63\nn:  18   win:  -33     |  if KLOC <= 216.811\nn:  13   win:  -15     |  |  if STOR <= 3.785\nn:   6   win:    7     |  |  |  if KLOC <= 117.833;\nn:   7   win:  -34     |  |  |  if KLOC > 117.833\nn:   3   win:  -18     |  |  |  |  if DOCU > 2.115;\nn:   4   win:  -46     |  |  |  |  if DOCU <= 2.115;\nn:   5   win:  -80     |  |  if STOR > 3.785;\nn:   6   win: -114     |  if KLOC > 216.811;\n\nUsed:  KLOC DOCU STOR\nBest train: 77 hold-out: 89\n"
+    },
+    {
+      "run": 413,
+      "accuracy": 89,
+      "stability": 19.2,
+      "tree_complexity": 0.2,
+      "features": [
+        "KLOC",
+        "SITE",
+        "PCON",
+        "RUSE"
+      ],
+      "raw_output": "\nFile:\t moot_process_raw_data/xomo_ground.csv\nRows:\t 10000\nX:\t 24\nY:\t 4 EFFORT- MONTHS- DEFECTS- RISKS-\n \nn:  22   win:   -5     if KLOC <= 204.65\nn:   9   win:   30     |  if KLOC <= 77.477\nn:   5   win:   46     |  |  if SITE > 4.285;\nn:   4   win:    9     |  |  if SITE <= 4.285;\nn:  13   win:  -30     |  if KLOC > 77.477\nn:   5   win:   -2     |  |  if PCON > 3.404;\nn:   8   win:  -48     |  |  if PCON <= 3.404\nn:   4   win:  -28     |  |  |  if SITE > 4.117;\nn:   4   win:  -69     |  |  |  if SITE <= 4.117;\nn:   8   win: -127     if KLOC > 204.65\nn:   4   win:  -63     |  if RUSE <= 2.731;\nn:   4   win: -190     |  if RUSE > 2.731;\n\nUsed:  KLOC SITE PCON RUSE\nBest train: 64 hold-out: 89\n"
+    },
+    {
+      "run": 177,
+      "accuracy": 86,
+      "stability": 21.6,
+      "tree_complexity": 0.2,
+      "features": [
+        "KLOC",
+        "LTEx",
+        "PCAP",
+        "RELY"
+      ],
+      "raw_output": "\nFile:\t moot_process_raw_data/xomo_ground.csv\nRows:\t 10000\nX:\t 24\nY:\t 4 EFFORT- MONTHS- DEFECTS- RISKS-\n \nn:  24   win:  -10     if KLOC <= 224.851\nn:  15   win:    6     |  if KLOC <= 54.344\nn:  10   win:   33     |  |  if RELY > 1.817\nn:   6   win:   54     |  |  |  if LTEx > 2.739;\nn:   4   win:    2     |  |  |  if LTEx <= 2.739;\nn:   5   win:  -46     |  |  if RELY <= 1.817;\nn:   9   win:  -38     |  if KLOC > 54.344\nn:   5   win:  -24     |  |  if PCAP > 4.224;\nn:   4   win:  -57     |  |  if PCAP <= 4.224;\nn:   6   win: -146     if KLOC > 224.851;\n\nUsed:  KLOC LTEx PCAP RELY\nBest train: 96 hold-out: 86\n"
+    },
+    {
+      "run": 191,
+      "accuracy": 86,
+      "stability": 16.8,
+      "tree_complexity": 0.1,
+      "features": [
+        "DATA",
+        "KLOC"
+      ],
+      "raw_output": "\nFile:\t moot_process_raw_data/xomo_ground.csv\nRows:\t 10000\nX:\t 24\nY:\t 4 EFFORT- MONTHS- DEFECTS- RISKS-\n \nn:  16   win:   -3     if KLOC <= 101.633\nn:  10   win:    8     |  if DATA <= 2.92\nn:   5   win:    9     |  |  if KLOC <= 39.271;\nn:   5   win:    7     |  |  if KLOC > 39.271;\nn:   6   win:  -22     |  if DATA > 2.92;\nn:  14   win: -116     if KLOC > 101.633\nn:   6   win:  -72     |  if DATA <= 2.765;\nn:   8   win: -148     |  if DATA > 2.765\nn:   4   win:  -99     |  |  if DATA > 3.544;\nn:   4   win: -197     |  |  if DATA <= 3.544;\n\nUsed:  DATA KLOC\nBest train: 47 hold-out: 86\n"
+    },
+    {
+      "run": 456,
+      "accuracy": 86,
+      "stability": 19.2,
+      "tree_complexity": 0.15,
+      "features": [
+        "KLOC",
+        "PVOL",
+        "RELY"
+      ],
+      "raw_output": "\nFile:\t moot_process_raw_data/xomo_ground.csv\nRows:\t 10000\nX:\t 24\nY:\t 4 EFFORT- MONTHS- DEFECTS- RISKS-\n \nn:  25   win:    1     if KLOC <= 146.267\nn:  12   win:   27     |  if KLOC <= 51.365\nn:   7   win:   56     |  |  if RELY > 2.447\nn:   4   win:   74     |  |  |  if KLOC <= 25.674;\nn:   3   win:   31     |  |  |  if KLOC > 25.674;\nn:   5   win:  -13     |  |  if RELY <= 2.447;\nn:  13   win:  -21     |  if KLOC > 51.365\nn:   4   win:   -2     |  |  if PVOL > 3.645;\nn:   9   win:  -30     |  |  if PVOL <= 3.645\nn:   6   win:  -14     |  |  |  if PVOL <= 3.002;\nn:   3   win:  -60     |  |  |  if PVOL > 3.002;\nn:   5   win: -117     if KLOC > 146.267;\n\nUsed:  KLOC PVOL RELY\nBest train: 86 hold-out: 86\n"
+    },
+    {
+      "run": 116,
+      "accuracy": 85,
+      "stability": 17.2,
+      "tree_complexity": 0.1,
+      "features": [
+        "KLOC",
+        "PREC"
+      ],
+      "raw_output": "\nFile:\t moot_process_raw_data/xomo_ground.csv\nRows:\t 10000\nX:\t 24\nY:\t 4 EFFORT- MONTHS- DEFECTS- RISKS-\n \nn:  18   win:   11     if KLOC <= 108.696\nn:   8   win:   43     |  if KLOC <= 51.63\nn:   4   win:   57     |  |  if PREC > 4.181;\nn:   4   win:   29     |  |  if PREC <= 4.181;\nn:  10   win:  -13     |  if KLOC > 51.63\nn:   6   win:   17     |  |  if PREC > 3.981;\nn:   4   win:  -59     |  |  if PREC <= 3.981;\nn:  12   win: -122     if KLOC > 108.696\nn:   6   win:  -80     |  if KLOC <= 190.479;\nn:   6   win: -163     |  if KLOC > 190.479;\n\nUsed:  KLOC PREC\nBest train: 74 hold-out: 85\n"
+    },
+    {
+      "run": 5,
+      "accuracy": 76,
+      "stability": 21.6,
+      "tree_complexity": 0.15,
+      "features": [
+        "KLOC",
+        "PCON",
+        "SITE"
+      ],
+      "raw_output": "\nFile:\t moot_process_raw_data/xomo_ground.csv\nRows:\t 10000\nX:\t 24\nY:\t 4 EFFORT- MONTHS- DEFECTS- RISKS-\n \nn:  24   win:   24     if KLOC <= 224.851\nn:  11   win:   53     |  if KLOC <= 64.34\nn:   5   win:   72     |  |  if KLOC <= 25.687;\nn:   6   win:   38     |  |  if KLOC > 25.687;\nn:  13   win:    0     |  if KLOC > 64.34\nn:   3   win:   43     |  |  if PCON > 4.019;\nn:  10   win:  -14     |  |  if PCON <= 4.019\nn:   3   win:   25     |  |  |  if SITE > 5.565;\nn:   7   win:  -31     |  |  |  if SITE <= 5.565\nn:   3   win:  -17     |  |  |  |  if PCON > 2.271;\nn:   4   win:  -41     |  |  |  |  if PCON <= 2.271;\nn:   6   win: -133     if KLOC > 224.851;\n\nUsed:  KLOC PCON SITE\nBest train: 80 hold-out: 76\n"
+    },
+    {
+      "run": 219,
+      "accuracy": 64,
+      "stability": 21.8,
+      "tree_complexity": 0.15,
+      "features": [
+        "KLOC",
+        "LTEx",
+        "SITE"
+      ],
+      "raw_output": "\nFile:\t moot_process_raw_data/xomo_ground.csv\nRows:\t 10000\nX:\t 24\nY:\t 4 EFFORT- MONTHS- DEFECTS- RISKS-\n \nn:  16   win:    9     if KLOC <= 122.123\nn:   6   win:   51     |  if KLOC <= 58.493;\nn:  10   win:  -14     |  if KLOC > 58.493\nn:   4   win:   13     |  |  if LTEx > 3.217;\nn:   6   win:  -33     |  |  if LTEx <= 3.217;\nn:  14   win:  -90     if KLOC > 122.123\nn:   4   win:  -27     |  if SITE > 4.925;\nn:  10   win: -116     |  if SITE <= 4.925\nn:   5   win:  -84     |  |  if LTEx > 2.551;\nn:   5   win: -147     |  |  if LTEx <= 2.551;\n\nUsed:  KLOC LTEx SITE\nBest train: 100 hold-out: 64\n"
+    }
+  ]
+}

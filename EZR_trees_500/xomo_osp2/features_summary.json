@@ -1,0 +1,124 @@
+{
+  "dataset": "xomo_osp2",
+  "stability_method": "Option B (per-feature stability)",
+  "analysis": {
+    "total_runs": 500,
+    "total_unique_features": 19,
+    "features": [
+      {
+        "name": "KLOC",
+        "stability": 52.0,
+        "appears_in_runs": 260,
+        "total_runs": 500
+      },
+      {
+        "name": "PMAT",
+        "stability": 47.2,
+        "appears_in_runs": 236,
+        "total_runs": 500
+      },
+      {
+        "name": "SCED",
+        "stability": 46.6,
+        "appears_in_runs": 233,
+        "total_runs": 500
+      },
+      {
+        "name": "TIME",
+        "stability": 33.8,
+        "appears_in_runs": 169,
+        "total_runs": 500
+      },
+      {
+        "name": "DATA",
+        "stability": 29.4,
+        "appears_in_runs": 147,
+        "total_runs": 500
+      },
+      {
+        "name": "ACAP",
+        "stability": 29.0,
+        "appears_in_runs": 145,
+        "total_runs": 500
+      },
+      {
+        "name": "LTEx",
+        "stability": 26.6,
+        "appears_in_runs": 133,
+        "total_runs": 500
+      },
+      {
+        "name": "STOR",
+        "stability": 26.4,
+        "appears_in_runs": 132,
+        "total_runs": 500
+      },
+      {
+        "name": "DOCU",
+        "stability": 25.8,
+        "appears_in_runs": 129,
+        "total_runs": 500
+      },
+      {
+        "name": "CPLx",
+        "stability": 25.2,
+        "appears_in_runs": 126,
+        "total_runs": 500
+      },
+      {
+        "name": "RESL",
+        "stability": 24.4,
+        "appears_in_runs": 122,
+        "total_runs": 500
+      },
+      {
+        "name": "TOOL",
+        "stability": 23.4,
+        "appears_in_runs": 117,
+        "total_runs": 500
+      },
+      {
+        "name": "ETAT",
+        "stability": 23.4,
+        "appears_in_runs": 117,
+        "total_runs": 500
+      },
+      {
+        "name": "AEXP",
+        "stability": 23.2,
+        "appears_in_runs": 116,
+        "total_runs": 500
+      },
+      {
+        "name": "RUSE",
+        "stability": 23.2,
+        "appears_in_runs": 116,
+        "total_runs": 500
+      },
+      {
+        "name": "FLEx",
+        "stability": 22.2,
+        "appears_in_runs": 111,
+        "total_runs": 500
+      },
+      {
+        "name": "PREC",
+        "stability": 22.0,
+        "appears_in_runs": 110,
+        "total_runs": 500
+      },
+      {
+        "name": "TEAM",
+        "stability": 20.8,
+        "appears_in_runs": 104,
+        "total_runs": 500
+      },
+      {
+        "name": "PCON",
+        "stability": 17.8,
+        "appears_in_runs": 89,
+        "total_runs": 500
+      }
+    ]
+  }
+}

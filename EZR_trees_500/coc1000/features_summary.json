@@ -1,0 +1,130 @@
+{
+  "dataset": "coc1000",
+  "stability_method": "Option B (per-feature stability)",
+  "analysis": {
+    "total_runs": 500,
+    "total_unique_features": 20,
+    "features": [
+      {
+        "name": "SCED",
+        "stability": 34.6,
+        "appears_in_runs": 173,
+        "total_runs": 500
+      },
+      {
+        "name": "PCAP",
+        "stability": 31.6,
+        "appears_in_runs": 158,
+        "total_runs": 500
+      },
+      {
+        "name": "ARCH",
+        "stability": 31.6,
+        "appears_in_runs": 158,
+        "total_runs": 500
+      },
+      {
+        "name": "CPLx",
+        "stability": 30.4,
+        "appears_in_runs": 152,
+        "total_runs": 500
+      },
+      {
+        "name": "PMAT",
+        "stability": 30.0,
+        "appears_in_runs": 150,
+        "total_runs": 500
+      },
+      {
+        "name": "ACAP",
+        "stability": 29.0,
+        "appears_in_runs": 145,
+        "total_runs": 500
+      },
+      {
+        "name": "TIME",
+        "stability": 29.0,
+        "appears_in_runs": 145,
+        "total_runs": 500
+      },
+      {
+        "name": "RELY",
+        "stability": 28.0,
+        "appears_in_runs": 140,
+        "total_runs": 500
+      },
+      {
+        "name": "RUSE",
+        "stability": 28.0,
+        "appears_in_runs": 140,
+        "total_runs": 500
+      },
+      {
+        "name": "LTEx",
+        "stability": 27.2,
+        "appears_in_runs": 136,
+        "total_runs": 500
+      },
+      {
+        "name": "TEAM",
+        "stability": 27.0,
+        "appears_in_runs": 135,
+        "total_runs": 500
+      },
+      {
+        "name": "FLEx",
+        "stability": 27.0,
+        "appears_in_runs": 135,
+        "total_runs": 500
+      },
+      {
+        "name": "PCON",
+        "stability": 27.0,
+        "appears_in_runs": 135,
+        "total_runs": 500
+      },
+      {
+        "name": "PREC",
+        "stability": 26.6,
+        "appears_in_runs": 133,
+        "total_runs": 500
+      },
+      {
+        "name": "SITE",
+        "stability": 25.8,
+        "appears_in_runs": 129,
+        "total_runs": 500
+      },
+      {
+        "name": "TOOL",
+        "stability": 24.8,
+        "appears_in_runs": 124,
+        "total_runs": 500
+      },
+      {
+        "name": "PVOL",
+        "stability": 22.8,
+        "appears_in_runs": 114,
+        "total_runs": 500
+      },
+      {
+        "name": "STOR",
+        "stability": 22.6,
+        "appears_in_runs": 113,
+        "total_runs": 500
+      },
+      {
+        "name": "DOCU",
+        "stability": 22.2,
+        "appears_in_runs": 111,
+        "total_runs": 500
+      },
+      {
+        "name": "DATA",
+        "stability": 18.4,
+        "appears_in_runs": 92,
+        "total_runs": 500
+      }
+    ]
+  }
+}

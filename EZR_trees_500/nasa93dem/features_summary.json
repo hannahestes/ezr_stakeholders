@@ -1,0 +1,88 @@
+{
+  "dataset": "nasa93dem",
+  "stability_method": "Option B (per-feature stability)",
+  "analysis": {
+    "total_runs": 500,
+    "total_unique_features": 13,
+    "features": [
+      {
+        "name": "pmat",
+        "stability": 99.4,
+        "appears_in_runs": 497,
+        "total_runs": 500
+      },
+      {
+        "name": "rely",
+        "stability": 95.0,
+        "appears_in_runs": 475,
+        "total_runs": 500
+      },
+      {
+        "name": "data",
+        "stability": 76.6,
+        "appears_in_runs": 383,
+        "total_runs": 500
+      },
+      {
+        "name": "cplx",
+        "stability": 39.2,
+        "appears_in_runs": 196,
+        "total_runs": 500
+      },
+      {
+        "name": "pcap",
+        "stability": 38.4,
+        "appears_in_runs": 192,
+        "total_runs": 500
+      },
+      {
+        "name": "time",
+        "stability": 30.0,
+        "appears_in_runs": 150,
+        "total_runs": 500
+      },
+      {
+        "name": "stor",
+        "stability": 23.0,
+        "appears_in_runs": 115,
+        "total_runs": 500
+      },
+      {
+        "name": "apex",
+        "stability": 13.4,
+        "appears_in_runs": 67,
+        "total_runs": 500
+      },
+      {
+        "name": "acap",
+        "stability": 12.0,
+        "appears_in_runs": 60,
+        "total_runs": 500
+      },
+      {
+        "name": "plex",
+        "stability": 7.4,
+        "appears_in_runs": 37,
+        "total_runs": 500
+      },
+      {
+        "name": "pvol",
+        "stability": 6.4,
+        "appears_in_runs": 32,
+        "total_runs": 500
+      },
+      {
+        "name": "sced",
+        "stability": 4.0,
+        "appears_in_runs": 20,
+        "total_runs": 500
+      },
+      {
+        "name": "ltex",
+        "stability": 1.0,
+        "appears_in_runs": 5,
+        "total_runs": 500
+      }
+    ]
+  }
+}

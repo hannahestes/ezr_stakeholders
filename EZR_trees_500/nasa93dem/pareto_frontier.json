@@ -1,0 +1,30 @@
+{
+  "dataset": "nasa93dem",
+  "total_trees": 500,
+  "frontier_size": 2,
+  "frontier": [
+    {
+      "run": 345,
+      "accuracy": 100,
+      "stability": 76.6,
+      "tree_complexity": 0.15,
+      "features": [
+        "pmat",
+        "data",
+        "rely"
+      ],
+      "raw_output": "\nFile:\t moot_process_raw_data/nasa93dem.csv\nRows:\t 93\nX:\t 22\nY:\t 3 Kloc+ Effort- Defects-\n \nn:  15   win:   -8     if rely == n\nn:   8   win:   -5     |  if pmat != h\nn:   4   win:    4     |  |  if data == l;\nn:   4   win:  -15     |  |  if data != l;\nn:   7   win:  -11     |  if pmat == h;\nn:  15   win:  -30     if rely != n\nn:   8   win:  -19     |  if data != l\nn:   4   win:   -5     |  |  if pmat != h;\nn:   4   win:  -33     |  |  if pmat == h;\nn:   7   win:  -43     |  if data == l;\n\nUsed:  pmat data rely\nBest train: 54 hold-out: 100\n"
+    },
+    {
+      "run": 451,
+      "accuracy": 72,
+      "stability": 95.0,
+      "tree_complexity": 0.1,
+      "features": [
+        "rely",
+        "pmat"
+      ],
+      "raw_output": "\nFile:\t moot_process_raw_data/nasa93dem.csv\nRows:\t 93\nX:\t 22\nY:\t 3 Kloc+ Effort- Defects-\n \nn:  15   win:   -1     if pmat != h\nn:   8   win:    3     |  if pmat == l\nn:   4   win:   29     |  |  if rely == h;\nn:   4   win:  -22     |  |  if rely != h;\nn:   7   win:   -6     |  if pmat != l\nn:   3   win:   13     |  |  if rely != n;\nn:   4   win:  -21     |  |  if rely == n;\nn:  15   win:  -11     if pmat == h\nn:   8   win:   -1     |  if rely == h;\nn:   7   win:  -22     |  if rely != h;\n\nUsed:  rely pmat\nBest train: 62 hold-out: 72\n"
+    }
+  ]
+}

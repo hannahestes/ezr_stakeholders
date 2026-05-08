@@ -1,0 +1,116 @@
+{
+  "dataset": "coc1000",
+  "total_trees": 500,
+  "frontier_size": 8,
+  "frontier": [
+    {
+      "run": 106,
+      "accuracy": 100,
+      "stability": 22.8,
+      "tree_complexity": 0.3,
+      "features": [
+        "ACAP",
+        "ARCH",
+        "PCAP",
+        "PCON",
+        "PMAT",
+        "PVOL"
+      ],
+      "raw_output": "\nFile:\t moot_process_raw_data/coc1000.csv\nRows:\t 1000\nX:\t 20\nY:\t 5 LOC+ AEXP- PLEx- RISK- EFFORT-\n \nn:   5   win:   41     if PVOL > 4;\nn:  25   win:   -9     if PVOL <= 4\nn:  18   win:    1     |  if PCON > 2\nn:  10   win:   18     |  |  if PCAP > 3\nn:   7   win:   26     |  |  |  if ACAP <= 4\nn:   3   win:   36     |  |  |  |  if ACAP > 3;\nn:   4   win:   19     |  |  |  |  if ACAP <= 3;\nn:   3   win:    0     |  |  |  if ACAP > 4;\nn:   8   win:  -19     |  |  if PCAP <= 3\nn:   4   win:   -6     |  |  |  if PMAT <= 2;\nn:   4   win:  -32     |  |  |  if PMAT > 2;\nn:   7   win:  -37     |  if PCON <= 2\nn:   3   win:   -8     |  |  if ARCH > 3;\nn:   4   win:  -59     |  |  if ARCH <= 3;\n\nUsed:  ACAP ARCH PCAP PCON PMAT PVOL\nBest train: 75 hold-out: 100\n"
+    },
+    {
+      "run": 259,
+      "accuracy": 100,
+      "stability": 18.4,
+      "tree_complexity": 0.2,
+      "features": [
+        "PREC",
+        "CPLx",
+        "DATA",
+        "DOCU"
+      ],
+      "raw_output": "\nFile:\t moot_process_raw_data/coc1000.csv\nRows:\t 1000\nX:\t 20\nY:\t 5 LOC+ AEXP- PLEx- RISK- EFFORT-\n \nn:  16   win:   -2     if DATA <= 3\nn:   5   win:   25     |  if CPLx <= 3;\nn:  11   win:  -15     |  if CPLx > 3\nn:   6   win:   -6     |  |  if PREC <= 2;\nn:   5   win:  -25     |  |  if PREC > 2;\nn:  14   win:  -35     if DATA > 3\nn:   9   win:  -23     |  if DOCU <= 3\nn:   3   win:  -10     |  |  if PREC > 3;\nn:   6   win:  -29     |  |  if PREC <= 3;\nn:   5   win:  -58     |  if DOCU > 3;\n\nUsed:  PREC CPLx DATA DOCU\nBest train: 86 hold-out: 100\n"
+    },
+    {
+      "run": 44,
+      "accuracy": 91,
+      "stability": 26.6,
+      "tree_complexity": 0.3,
+      "features": [
+        "LTEx",
+        "PCAP",
+        "PREC",
+        "RUSE",
+        "SCED",
+        "TEAM"
+      ],
+      "raw_output": "\nFile:\t moot_process_raw_data/coc1000.csv\nRows:\t 1000\nX:\t 20\nY:\t 5 LOC+ AEXP- PLEx- RISK- EFFORT-\n \nn:  13   win:   15     if PCAP > 4\nn:   6   win:   35     |  if RUSE <= 4;\nn:   7   win:   -1     |  if RUSE > 4\nn:   3   win:   20     |  |  if PREC > 3;\nn:   4   win:  -18     |  |  if PREC <= 3;\nn:  17   win:  -22     if PCAP <= 4\nn:  10   win:   -7     |  if SCED > 2\nn:   5   win:    2     |  |  if TEAM > 3;\nn:   5   win:  -18     |  |  if TEAM <= 3;\nn:   7   win:  -42     |  if SCED <= 2\nn:   3   win:  -21     |  |  if LTEx > 2;\nn:   4   win:  -58     |  |  if LTEx <= 2;\n\nUsed:  LTEx PCAP PREC RUSE SCED TEAM\nBest train: 78 hold-out: 91\n"
+    },
+    {
+      "run": 487,
+      "accuracy": 91,
+      "stability": 24.8,
+      "tree_complexity": 0.25,
+      "features": [
+        "CPLx",
+        "PMAT",
+        "RELY",
+        "TEAM",
+        "TOOL"
+      ],
+      "raw_output": "\nFile:\t moot_process_raw_data/coc1000.csv\nRows:\t 1000\nX:\t 20\nY:\t 5 LOC+ AEXP- PLEx- RISK- EFFORT-\n \nn:  16   win:    0     if TOOL > 3\nn:   6   win:    9     |  if CPLx <= 4;\nn:  10   win:   -6     |  if CPLx > 4\nn:   3   win:    7     |  |  if TEAM > 4;\nn:   7   win:  -12     |  |  if TEAM <= 4\nn:   3   win:   -2     |  |  |  if PMAT > 3;\nn:   4   win:  -19     |  |  |  if PMAT <= 3;\nn:  14   win:  -37     if TOOL <= 3\nn:   9   win:  -22     |  if CPLx <= 4\nn:   4   win:    2     |  |  if RELY <= 2;\nn:   5   win:  -42     |  |  if RELY > 2;\nn:   5   win:  -65     |  if CPLx > 4;\n\nUsed:  CPLx PMAT RELY TEAM TOOL\nBest train: 58 hold-out: 91\n"
+    },
+    {
+      "run": 94,
+      "accuracy": 86,
+      "stability": 28.0,
+      "tree_complexity": 0.2,
+      "features": [
+        "ACAP",
+        "PMAT",
+        "RUSE",
+        "SCED"
+      ],
+      "raw_output": "\nFile:\t moot_process_raw_data/coc1000.csv\nRows:\t 1000\nX:\t 20\nY:\t 5 LOC+ AEXP- PLEx- RISK- EFFORT-\n \nn:  24   win:  -10     if SCED > 2\nn:  11   win:    2     |  if PMAT > 4\nn:   5   win:   17     |  |  if ACAP <= 3;\nn:   6   win:  -10     |  |  if ACAP > 3;\nn:  13   win:  -20     |  if PMAT <= 4\nn:   9   win:  -10     |  |  if RUSE > 4\nn:   6   win:   -4     |  |  |  if ACAP <= 2;\nn:   3   win:  -21     |  |  |  if ACAP > 2;\nn:   4   win:  -42     |  |  if RUSE <= 4;\nn:   6   win:  -53     if SCED <= 2;\n\nUsed:  ACAP PMAT RUSE SCED\nBest train: 59 hold-out: 86\n"
+    },
+    {
+      "run": 224,
+      "accuracy": 59,
+      "stability": 29.0,
+      "tree_complexity": 0.25,
+      "features": [
+        "ACAP",
+        "ARCH",
+        "CPLx",
+        "PMAT",
+        "TIME"
+      ],
+      "raw_output": "\nFile:\t moot_process_raw_data/coc1000.csv\nRows:\t 1000\nX:\t 20\nY:\t 5 LOC+ AEXP- PLEx- RISK- EFFORT-\n \nn:  24   win:    7     if ACAP > 2\nn:  21   win:   15     |  if TIME <= 5\nn:  12   win:   25     |  |  if CPLx <= 4\nn:   8   win:   34     |  |  |  if ACAP <= 4\nn:   4   win:   40     |  |  |  |  if ARCH <= 2;\nn:   4   win:   29     |  |  |  |  if ARCH > 2;\nn:   4   win:    7     |  |  |  if ACAP > 4;\nn:   9   win:    1     |  |  if CPLx > 4\nn:   5   win:   14     |  |  |  if PMAT > 3;\nn:   4   win:  -15     |  |  |  if PMAT <= 3;\nn:   3   win:  -48     |  if TIME > 5;\nn:   6   win:  -39     if ACAP <= 2;\n\nUsed:  ACAP ARCH CPLx PMAT TIME\nBest train: 91 hold-out: 59\n"
+    },
+    {
+      "run": 415,
+      "accuracy": 56,
+      "stability": 30.0,
+      "tree_complexity": 0.2,
+      "features": [
+        "CPLx",
+        "PCAP",
+        "ARCH",
+        "PMAT"
+      ],
+      "raw_output": "\nFile:\t moot_process_raw_data/coc1000.csv\nRows:\t 1000\nX:\t 20\nY:\t 5 LOC+ AEXP- PLEx- RISK- EFFORT-\n \nn:  26   win:   -4     if PCAP > 1\nn:  21   win:    3     |  if PCAP <= 4\nn:   7   win:   21     |  |  if ARCH <= 1\nn:   3   win:   33     |  |  |  if PMAT > 2;\nn:   4   win:   13     |  |  |  if PMAT <= 2;\nn:  14   win:   -5     |  |  if ARCH > 1\nn:   8   win:    7     |  |  |  if CPLx > 3\nn:   4   win:   15     |  |  |  |  if CPLx <= 4;\nn:   4   win:   -1     |  |  |  |  if CPLx > 4;\nn:   6   win:  -23     |  |  |  if CPLx <= 3;\nn:   5   win:  -36     |  if PCAP > 4;\nn:   4   win:  -60     if PCAP <= 1;\n\nUsed:  CPLx PCAP ARCH PMAT\nBest train: 53 hold-out: 56\n"
+    },
+    {
+      "run": 478,
+      "accuracy": 45,
+      "stability": 27.0,
+      "tree_complexity": 0.15,
+      "features": [
+        "LTEx",
+        "CPLx",
+        "FLEx"
+      ],
+      "raw_output": "\nFile:\t moot_process_raw_data/coc1000.csv\nRows:\t 1000\nX:\t 20\nY:\t 5 LOC+ AEXP- PLEx- RISK- EFFORT-\n \nn:  19   win:   -8     if LTEx > 2\nn:   5   win:    9     |  if LTEx <= 3;\nn:  14   win:  -15     |  if LTEx > 3\nn:   6   win:    2     |  |  if FLEx <= 2;\nn:   8   win:  -29     |  |  if FLEx > 2\nn:   3   win:  -10     |  |  |  if LTEx > 4;\nn:   5   win:  -40     |  |  |  if LTEx <= 4;\nn:  11   win:  -33     if LTEx <= 2\nn:   6   win:  -22     |  if CPLx <= 3;\nn:   5   win:  -46     |  if CPLx > 3;\n\nUsed:  LTEx CPLx FLEx\nBest train: 51 hold-out: 45\n"
+    }
+  ]
+}

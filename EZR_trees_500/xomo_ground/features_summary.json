@@ -1,0 +1,142 @@
+{
+  "dataset": "xomo_ground",
+  "stability_method": "Option B (per-feature stability)",
+  "analysis": {
+    "total_runs": 500,
+    "total_unique_features": 22,
+    "features": [
+      {
+        "name": "KLOC",
+        "stability": 96.6,
+        "appears_in_runs": 483,
+        "total_runs": 500
+      },
+      {
+        "name": "RELY",
+        "stability": 42.8,
+        "appears_in_runs": 214,
+        "total_runs": 500
+      },
+      {
+        "name": "SITE",
+        "stability": 24.0,
+        "appears_in_runs": 120,
+        "total_runs": 500
+      },
+      {
+        "name": "LTEx",
+        "stability": 21.8,
+        "appears_in_runs": 109,
+        "total_runs": 500
+      },
+      {
+        "name": "PCAP",
+        "stability": 21.6,
+        "appears_in_runs": 108,
+        "total_runs": 500
+      },
+      {
+        "name": "PCON",
+        "stability": 21.6,
+        "appears_in_runs": 108,
+        "total_runs": 500
+      },
+      {
+        "name": "TEAM",
+        "stability": 21.4,
+        "appears_in_runs": 107,
+        "total_runs": 500
+      },
+      {
+        "name": "AEXP",
+        "stability": 20.4,
+        "appears_in_runs": 102,
+        "total_runs": 500
+      },
+      {
+        "name": "PVOL",
+        "stability": 19.2,
+        "appears_in_runs": 96,
+        "total_runs": 500
+      },
+      {
+        "name": "PLEx",
+        "stability": 19.2,
+        "appears_in_runs": 96,
+        "total_runs": 500
+      },
+      {
+        "name": "RUSE",
+        "stability": 19.2,
+        "appears_in_runs": 96,
+        "total_runs": 500
+      },
+      {
+        "name": "CPLx",
+        "stability": 18.2,
+        "appears_in_runs": 91,
+        "total_runs": 500
+      },
+      {
+        "name": "STOR",
+        "stability": 18.0,
+        "appears_in_runs": 90,
+        "total_runs": 500
+      },
+      {
+        "name": "ETAT",
+        "stability": 18.0,
+        "appears_in_runs": 90,
+        "total_runs": 500
+      },
+      {
+        "name": "PREC",
+        "stability": 17.2,
+        "appears_in_runs": 86,
+        "total_runs": 500
+      },
+      {
+        "name": "DOCU",
+        "stability": 17.0,
+        "appears_in_runs": 85,
+        "total_runs": 500
+      },
+      {
+        "name": "PMAT",
+        "stability": 17.0,
+        "appears_in_runs": 85,
+        "total_runs": 500
+      },
+      {
+        "name": "DATA",
+        "stability": 16.8,
+        "appears_in_runs": 84,
+        "total_runs": 500
+      },
+      {
+        "name": "FLEx",
+        "stability": 15.8,
+        "appears_in_runs": 79,
+        "total_runs": 500
+      },
+      {
+        "name": "TIME",
+        "stability": 15.4,
+        "appears_in_runs": 77,
+        "total_runs": 500
+      },
+      {
+        "name": "ACAP",
+        "stability": 14.6,
+        "appears_in_runs": 73,
+        "total_runs": 500
+      },
+      {
+        "name": "RESL",
+        "stability": 14.0,
+        "appears_in_runs": 70,
+        "total_runs": 500
+      }
+    ]
+  }
+}

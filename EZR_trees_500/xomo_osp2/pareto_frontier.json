@@ -1,0 +1,112 @@
+{
+  "dataset": "xomo_osp2",
+  "total_trees": 500,
+  "frontier_size": 8,
+  "frontier": [
+    {
+      "run": 482,
+      "accuracy": 99,
+      "stability": 20.8,
+      "tree_complexity": 0.2,
+      "features": [
+        "PREC",
+        "CPLx",
+        "DOCU",
+        "TEAM"
+      ],
+      "raw_output": "\nFile:\t moot_process_raw_data/xomo_osp2.csv\nRows:\t 10000\nX:\t 24\nY:\t 4 EFFORT- MONTHS- DEFECTS- RISKS-\n \nn:  22   win:  -19     if PREC > 1.472\nn:  16   win:    1     |  if CPLx <= 5.429\nn:   5   win:   56     |  |  if TEAM > 2.72;\nn:  11   win:  -22     |  |  if TEAM <= 2.72\nn:   6   win:    4     |  |  |  if PREC > 1.567;\nn:   5   win:  -55     |  |  |  if PREC <= 1.567;\nn:   6   win:  -76     |  if CPLx > 5.429;\nn:   8   win:  -97     if PREC <= 1.472\nn:   3   win:  -75     |  if DOCU > 3.17;\nn:   5   win: -109     |  if DOCU <= 3.17;\n\nUsed:  PREC CPLx DOCU TEAM\nBest train: 87 hold-out: 99\n"
+    },
+    {
+      "run": 376,
+      "accuracy": 97,
+      "stability": 23.4,
+      "tree_complexity": 0.25,
+      "features": [
+        "ETAT",
+        "KLOC",
+        "PMAT",
+        "RESL",
+        "STOR"
+      ],
+      "raw_output": "\nFile:\t moot_process_raw_data/xomo_osp2.csv\nRows:\t 10000\nX:\t 24\nY:\t 4 EFFORT- MONTHS- DEFECTS- RISKS-\n \nn:  26   win:   18     if PMAT > 2.114\nn:  17   win:   31     |  if KLOC <= 101.387\nn:   6   win:   49     |  |  if RESL > 2.265;\nn:  11   win:   20     |  |  if RESL <= 2.265\nn:   6   win:   33     |  |  |  if STOR <= 3.624;\nn:   5   win:    5     |  |  |  if STOR > 3.624;\nn:   9   win:   -4     |  if KLOC > 101.387\nn:   5   win:   14     |  |  if ETAT > 3.76;\nn:   4   win:  -27     |  |  if ETAT <= 3.76;\nn:   4   win:  -61     if PMAT <= 2.114;\n\nUsed:  ETAT KLOC PMAT RESL STOR\nBest train: 73 hold-out: 97\n"
+    },
+    {
+      "run": 107,
+      "accuracy": 92,
+      "stability": 24.4,
+      "tree_complexity": 0.2,
+      "features": [
+        "PMAT",
+        "RESL",
+        "SCED",
+        "KLOC"
+      ],
+      "raw_output": "\nFile:\t moot_process_raw_data/xomo_osp2.csv\nRows:\t 10000\nX:\t 24\nY:\t 4 EFFORT- MONTHS- DEFECTS- RISKS-\n \nn:  17   win:   24     if KLOC <= 91.28\nn:  10   win:   43     |  if SCED > 1.983\nn:   3   win:   73     |  |  if PMAT > 3.387;\nn:   7   win:   29     |  |  if PMAT <= 3.387\nn:   3   win:   40     |  |  |  if SCED > 2.613;\nn:   4   win:   21     |  |  |  if SCED <= 2.613;\nn:   7   win:   -2     |  if SCED <= 1.983\nn:   3   win:   18     |  |  if RESL > 1.484;\nn:   4   win:  -17     |  |  if RESL <= 1.484;\nn:  13   win:  -47     if KLOC > 91.28\nn:   7   win:    0     |  if PMAT > 2.677\nn:   3   win:   44     |  |  if RESL > 2.373;\nn:   4   win:  -31     |  |  if RESL <= 2.373;\nn:   6   win: -102     |  if PMAT <= 2.677;\n\nUsed:  PMAT RESL SCED KLOC\nBest train: 83 hold-out: 92\n"
+    },
+    {
+      "run": 40,
+      "accuracy": 88,
+      "stability": 25.8,
+      "tree_complexity": 0.25,
+      "features": [
+        "SCED",
+        "DATA",
+        "DOCU",
+        "PMAT",
+        "TIME"
+      ],
+      "raw_output": "\nFile:\t moot_process_raw_data/xomo_osp2.csv\nRows:\t 10000\nX:\t 24\nY:\t 4 EFFORT- MONTHS- DEFECTS- RISKS-\n \nn:  24   win:   19     if SCED > 2.04\nn:  16   win:   41     |  if PMAT > 2.526\nn:   8   win:   65     |  |  if TIME <= 4.165\nn:   3   win:   87     |  |  |  if SCED > 2.831;\nn:   5   win:   52     |  |  |  if SCED <= 2.831;\nn:   8   win:   18     |  |  if TIME > 4.165\nn:   5   win:   29     |  |  |  if DOCU <= 3.371;\nn:   3   win:    0     |  |  |  if DOCU > 3.371;\nn:   8   win:  -25     |  if PMAT <= 2.526\nn:   5   win:    4     |  |  if DATA <= 3.57;\nn:   3   win:  -75     |  |  if DATA > 3.57;\nn:   6   win:  -58     if SCED <= 2.04;\n\nUsed:  SCED DATA DOCU PMAT TIME\nBest train: 79 hold-out: 88\n"
+    },
+    {
+      "run": 25,
+      "accuracy": 82,
+      "stability": 23.4,
+      "tree_complexity": 0.15,
+      "features": [
+        "PMAT",
+        "TOOL",
+        "LTEx"
+      ],
+      "raw_output": "\nFile:\t moot_process_raw_data/xomo_osp2.csv\nRows:\t 10000\nX:\t 24\nY:\t 4 EFFORT- MONTHS- DEFECTS- RISKS-\n \nn:  25   win:   -3     if PMAT > 1.738\nn:  16   win:   18     |  if LTEx > 3.111\nn:   6   win:   43     |  |  if TOOL > 2.43;\nn:  10   win:    3     |  |  if TOOL <= 2.43\nn:   6   win:   19     |  |  |  if PMAT > 3.031;\nn:   4   win:  -20     |  |  |  if PMAT <= 3.031;\nn:   9   win:  -42     |  if LTEx <= 3.111\nn:   6   win:  -26     |  |  if TOOL <= 2.802;\nn:   3   win:  -74     |  |  if TOOL > 2.802;\nn:   5   win:  -91     if PMAT <= 1.738;\n\nUsed:  PMAT TOOL LTEx\nBest train: 85 hold-out: 82\n"
+    },
+    {
+      "run": 465,
+      "accuracy": 75,
+      "stability": 29.0,
+      "tree_complexity": 0.25,
+      "features": [
+        "ACAP",
+        "DATA",
+        "KLOC",
+        "PMAT",
+        "SCED"
+      ],
+      "raw_output": "\nFile:\t moot_process_raw_data/xomo_osp2.csv\nRows:\t 10000\nX:\t 24\nY:\t 4 EFFORT- MONTHS- DEFECTS- RISKS-\n \nn:  19   win:    3     if SCED > 1.941\nn:   7   win:   52     |  if ACAP > 2.681\nn:   3   win:   70     |  |  if PMAT > 1.985;\nn:   4   win:   38     |  |  if PMAT <= 1.985;\nn:  12   win:  -25     |  if ACAP <= 2.681\nn:   7   win:   14     |  |  if DATA <= 2.702\nn:   3   win:   50     |  |  |  if ACAP > 2.442;\nn:   4   win:  -13     |  |  |  if ACAP <= 2.442;\nn:   5   win:  -80     |  |  if DATA > 2.702;\nn:  11   win:  -60     if SCED <= 1.941\nn:   5   win:  -35     |  if KLOC > 99.371;\nn:   6   win:  -81     |  if KLOC <= 99.371;\n\nUsed:  ACAP DATA KLOC PMAT SCED\nBest train: 75 hold-out: 75\n"
+    },
+    {
+      "run": 69,
+      "accuracy": 57,
+      "stability": 29.0,
+      "tree_complexity": 0.2,
+      "features": [
+        "PMAT",
+        "SCED",
+        "DATA",
+        "ACAP"
+      ],
+      "raw_output": "\nFile:\t moot_process_raw_data/xomo_osp2.csv\nRows:\t 10000\nX:\t 24\nY:\t 4 EFFORT- MONTHS- DEFECTS- RISKS-\n \nn:  24   win:   10     if DATA <= 4.119\nn:  17   win:   25     |  if SCED > 1.964\nn:   5   win:   70     |  |  if PMAT > 3.388;\nn:  12   win:    6     |  |  if PMAT <= 3.388\nn:   4   win:   48     |  |  |  if ACAP > 2.89;\nn:   8   win:  -14     |  |  |  if ACAP <= 2.89\nn:   5   win:    0     |  |  |  |  if SCED <= 2.454;\nn:   3   win:  -37     |  |  |  |  if SCED > 2.454;\nn:   7   win:  -25     |  if SCED <= 1.964\nn:   3   win:  -12     |  |  if PMAT > 3.488;\nn:   4   win:  -35     |  |  if PMAT <= 3.488;\nn:   6   win:  -65     if DATA > 4.119;\n\nUsed:  PMAT SCED DATA ACAP\nBest train: 66 hold-out: 57\n"
+    },
+    {
+      "run": 286,
+      "accuracy": 56,
+      "stability": 26.4,
+      "tree_complexity": 0.15,
+      "features": [
+        "PMAT",
+        "STOR",
+        "SCED"
+      ],
+      "raw_output": "\nFile:\t moot_process_raw_data/xomo_osp2.csv\nRows:\t 10000\nX:\t 24\nY:\t 4 EFFORT- MONTHS- DEFECTS- RISKS-\n \nn:  13   win:   19     if SCED > 2.396\nn:   6   win:   50     |  if PMAT > 2.864;\nn:   7   win:   -7     |  if PMAT <= 2.864\nn:   4   win:   18     |  |  if STOR <= 3.898;\nn:   3   win:  -41     |  |  if STOR > 3.898;\nn:  17   win:  -53     if SCED <= 2.396\nn:  11   win:  -38     |  if STOR > 3.798\nn:   5   win:  -27     |  |  if PMAT > 3.15;\nn:   6   win:  -46     |  |  if PMAT <= 3.15;\nn:   6   win:  -82     |  if STOR <= 3.798;\n\nUsed:  PMAT STOR SCED\nBest train: 79 hold-out: 56\n"
+    }
+  ]
+}

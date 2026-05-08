@@ -1,0 +1,70 @@
+{
+  "dataset": "pom3c",
+  "stability_method": "Option B (per-feature stability)",
+  "analysis": {
+    "total_runs": 500,
+    "total_unique_features": 10,
+    "features": [
+      {
+        "name": "Criticality",
+        "stability": 90.8,
+        "appears_in_runs": 454,
+        "total_runs": 500
+      },
+      {
+        "name": "Modifier",
+        "stability": 76.4,
+        "appears_in_runs": 382,
+        "total_runs": 500
+      },
+      {
+        "name": "Size",
+        "stability": 71.6,
+        "appears_in_runs": 358,
+        "total_runs": 500
+      },
+      {
+        "name": "Culture",
+        "stability": 60.6,
+        "appears_in_runs": 303,
+        "total_runs": 500
+      },
+      {
+        "name": "Known",
+        "stability": 56.4,
+        "appears_in_runs": 282,
+        "total_runs": 500
+      },
+      {
+        "name": "Initial",
+        "stability": 56.4,
+        "appears_in_runs": 282,
+        "total_runs": 500
+      },
+      {
+        "name": "Dynamism",
+        "stability": 46.4,
+        "appears_in_runs": 232,
+        "total_runs": 500
+      },
+      {
+        "name": "Inter-Dependency",
+        "stability": 44.6,
+        "appears_in_runs": 223,
+        "total_runs": 500
+      },
+      {
+        "name": "Team",
+        "stability": 43.8,
+        "appears_in_runs": 219,
+        "total_runs": 500
+      },
+      {
+        "name": "Plan",
+        "stability": 40.2,
+        "appears_in_runs": 201,
+        "total_runs": 500
+      }
+    ]
+  }
+}

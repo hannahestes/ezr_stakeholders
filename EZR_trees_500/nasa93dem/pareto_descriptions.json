@@ -1,0 +1,55 @@
+{
+  "dataset": "nasa93dem",
+  "num_trees": 2,
+  "trees": [
+    {
+      "run": 345,
+      "features": [
+        "pmat",
+        "data",
+        "rely"
+      ],
+      "num_features": 3,
+      "complexity": 0.15,
+      "accuracy": 100,
+      "train_value": 54,
+      "holdout_value": 100,
+      "num_nodes": 10,
+      "good_nodes": 1,
+      "bad_nodes": 9,
+      "root_feature": "rely",
+      "root_operator": "==",
+      "root_threshold": "n",
+      "avg_node_win": -16.5,
+      "max_win": 4,
+      "min_win": -43,
+      "tree_depth": 2,
+      "stability": 76.6,
+      "formatted_summary": "Tree Run 345\n======================================================================\n\nFeatures (3): pmat, data, rely\n\nPerformance:\n  Hold-out Accuracy: 100\n  Training Accuracy: 54\n  Average node win: -16.5\n  Win Range: [-43, 4]\n\nTree Structure:\n  Complexity: 0.15\n  Decision nodes: 10 total\n    Good outcomes (>= 0): 1\n    Bad outcomes (< 0): 9\n  Max depth: 2\n\nRoot Decision: rely == n\n\n======================================================================\nRaw EZR Output:\n======================================================================\n\nFile:\t moot_process_raw_data/nasa93dem.csv\nRows:\t 93\nX:\t 22\nY:\t 3 Kloc+ Effort- Defects-\n \nn:  15   win:   -8     if rely == n\nn:   8   win:   -5     |  if pmat != h\nn:   4   win:    4     |  |  if data == l;\nn:   4   win:  -15     |  |  if data != l;\nn:   7   win:  -11     |  if pmat == h;\nn:  15   win:  -30     if rely != n\nn:   8   win:  -19     |  if data != l\nn:   4   win:   -5     |  |  if pmat != h;\nn:   4   win:  -33     |  |  if pmat == h;\nn:   7   win:  -43     |  if data == l;\n\nUsed:  pmat data rely\nBest train: 54 hold-out: 100"
+    },
+    {
+      "run": 451,
+      "features": [
+        "rely",
+        "pmat"
+      ],
+      "num_features": 2,
+      "complexity": 0.1,
+      "accuracy": 72,
+      "train_value": 62,
+      "holdout_value": 72,
+      "num_nodes": 10,
+      "good_nodes": 3,
+      "bad_nodes": 7,
+      "root_feature": "pmat",
+      "root_operator": "!=",
+      "root_threshold": "h",
+      "avg_node_win": -3.9,
+      "max_win": 29,
+      "min_win": -22,
+      "tree_depth": 2,
+      "stability": 95.0,
+      "formatted_summary": "Tree Run 451\n======================================================================\n\nFeatures (2): rely, pmat\n\nPerformance:\n  Hold-out Accuracy: 72\n  Training Accuracy: 62\n  Average node win: -3.9\n  Win Range: [-22, 29]\n\nTree Structure:\n  Complexity: 0.10\n  Decision nodes: 10 total\n    Good outcomes (>= 0): 3\n    Bad outcomes (< 0): 7\n  Max depth: 2\n\nRoot Decision: pmat != h\n\n======================================================================\nRaw EZR Output:\n======================================================================\n\nFile:\t moot_process_raw_data/nasa93dem.csv\nRows:\t 93\nX:\t 22\nY:\t 3 Kloc+ Effort- Defects-\n \nn:  15   win:   -1     if pmat != h\nn:   8   win:    3     |  if pmat == l\nn:   4   win:   29     |  |  if rely == h;\nn:   4   win:  -22     |  |  if rely != h;\nn:   7   win:   -6     |  if pmat != l\nn:   3   win:   13     |  |  if rely != n;\nn:   4   win:  -21     |  |  if rely == n;\nn:  15   win:  -11     if pmat == h\nn:   8   win:   -1     |  if rely == h;\nn:   7   win:  -22     |  if rely != h;\n\nUsed:  rely pmat\nBest train: 62 hold-out: 72"
+    }
+  ]
+}

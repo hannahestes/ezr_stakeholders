@@ -1,0 +1,72 @@
+{
+  "dataset": "pom3a",
+  "total_trees": 500,
+  "frontier_size": 5,
+  "frontier": [
+    {
+      "run": 424,
+      "accuracy": 100,
+      "stability": 44.2,
+      "tree_complexity": 0.3,
+      "features": [
+        "Criticality",
+        "Modifier",
+        "Culture",
+        "Inter-Dependency",
+        "Dynamism",
+        "Size"
+      ],
+      "raw_output": "\nFile:\t moot_process_raw_data/pom3a.csv\nRows:\t 20000\nX:\t 9\nY:\t 3 Cost- Score- Idle-\n \nn:  19   win:  -22     if Size <= 0.5135507125448294\nn:  13   win:   -1     |  if Dynamism <= 0.3395560212124051\nn:   4   win:   41     |  |  if Criticality Modifier <= 0.2327962167965525;\nn:   9   win:  -20     |  |  if Criticality Modifier > 0.2327962167965525\nn:   6   win:   -3     |  |  |  if Inter-Dependency <= 0.3166605660028752;\nn:   3   win:  -54     |  |  |  if Inter-Dependency > 0.3166605660028752;\nn:   6   win:  -67     |  if Dynamism > 0.3395560212124051;\nn:  11   win:  -84     if Size > 0.5135507125448294\nn:   8   win:  -68     |  if Criticality Modifier <= 0.3766552699593061\nn:   4   win:  -53     |  |  if Culture <= 0.2899601248589873;\nn:   4   win:  -82     |  |  if Culture > 0.2899601248589873;\nn:   3   win: -128     |  if Criticality Modifier > 0.3766552699593061;\n\nUsed:  Criticality Modifier Culture Inter-Dependency Dynamism Size\nBest train: 85 hold-out: 100\n"
+    },
+    {
+      "run": 110,
+      "accuracy": 99,
+      "stability": 42.4,
+      "tree_complexity": 0.25,
+      "features": [
+        "Culture",
+        "Criticality",
+        "Modifier",
+        "Size",
+        "Plan"
+      ],
+      "raw_output": "\nFile:\t moot_process_raw_data/pom3a.csv\nRows:\t 20000\nX:\t 9\nY:\t 3 Cost- Score- Idle-\n \nn:  24   win:  -15     if Culture <= 0.6100644042149935\nn:   6   win:   34     |  if Size <= 0.2446829046278106;\nn:  18   win:  -32     |  if Size > 0.2446829046278106\nn:  13   win:  -16     |  |  if Criticality Modifier <= 0.8007595911985064\nn:  10   win:   -6     |  |  |  if Plan <= 0.5647205985445493\nn:   6   win:   15     |  |  |  |  if Culture <= 0.25801286827667;\nn:   4   win:  -39     |  |  |  |  if Culture > 0.25801286827667;\nn:   3   win:  -49     |  |  |  if Plan > 0.5647205985445493;\nn:   5   win:  -75     |  |  if Criticality Modifier > 0.8007595911985064;\nn:   6   win:  -88     if Culture > 0.6100644042149935;\n\nUsed:  Culture Criticality Modifier Size Plan\nBest train: 77 hold-out: 99\n"
+    },
+    {
+      "run": 285,
+      "accuracy": 91,
+      "stability": 66.2,
+      "tree_complexity": 0.2,
+      "features": [
+        "Size",
+        "Culture",
+        "Criticality",
+        "Dynamism"
+      ],
+      "raw_output": "\nFile:\t moot_process_raw_data/pom3a.csv\nRows:\t 20000\nX:\t 9\nY:\t 3 Cost- Score- Idle-\n \nn:  17   win:  -28     if Dynamism <= 0.392021210124992\nn:   5   win:    1     |  if Criticality <= 0.1554115139991603;\nn:  12   win:  -40     |  if Criticality > 0.1554115139991603\nn:   6   win:  -32     |  |  if Culture <= 0.4004993954516707;\nn:   6   win:  -49     |  |  if Culture > 0.4004993954516707;\nn:  13   win:  -78     if Dynamism > 0.392021210124992\nn:   4   win:  -49     |  if Size <= 0.3699449728798436;\nn:   9   win:  -90     |  if Size > 0.3699449728798436\nn:   5   win:  -90     |  |  if Size > 0.6697939912917322;\nn:   4   win:  -91     |  |  if Size <= 0.6697939912917322;\n\nUsed:  Size Culture Criticality Dynamism\nBest train: 57 hold-out: 91\n"
+    },
+    {
+      "run": 480,
+      "accuracy": 87,
+      "stability": 66.2,
+      "tree_complexity": 0.15,
+      "features": [
+        "Culture",
+        "Size",
+        "Dynamism"
+      ],
+      "raw_output": "\nFile:\t moot_process_raw_data/pom3a.csv\nRows:\t 20000\nX:\t 9\nY:\t 3 Cost- Score- Idle-\n \nn:   9   win:    1     if Dynamism <= 0.2218164367444247\nn:   4   win:   24     |  if Culture <= 0.0331803637091713;\nn:   5   win:  -16     |  if Culture > 0.0331803637091713;\nn:  21   win:  -63     if Dynamism > 0.2218164367444247\nn:  14   win:  -48     |  if Size <= 0.5223900332152819\nn:   4   win:  -22     |  |  if Culture > 0.4286602592279986;\nn:  10   win:  -58     |  |  if Culture <= 0.4286602592279986\nn:   6   win:  -32     |  |  |  if Culture <= 0.239741279823068;\nn:   4   win:  -98     |  |  |  if Culture > 0.239741279823068;\nn:   7   win:  -93     |  if Size > 0.5223900332152819\nn:   4   win:  -76     |  |  if Size <= 0.6861159436353468;\nn:   3   win: -116     |  |  if Size > 0.6861159436353468;\n\nUsed:  Culture Size Dynamism\nBest train: 92 hold-out: 87\n"
+    },
+    {
+      "run": 347,
+      "accuracy": 83,
+      "stability": 66.2,
+      "tree_complexity": 0.1,
+      "features": [
+        "Dynamism",
+        "Culture"
+      ],
+      "raw_output": "\nFile:\t moot_process_raw_data/pom3a.csv\nRows:\t 20000\nX:\t 9\nY:\t 3 Cost- Score- Idle-\n \nn:  18   win:    4     if Culture <= 0.2912324794924815\nn:  13   win:   16     |  if Dynamism <= 0.2133476357884031\nn:   5   win:   40     |  |  if Dynamism > 0.1262915931084958;\nn:   8   win:    1     |  |  if Dynamism <= 0.1262915931084958\nn:   4   win:   25     |  |  |  if Culture > 0.0994642064081156;\nn:   4   win:  -21     |  |  |  if Culture <= 0.0994642064081156;\nn:   5   win:  -26     |  if Dynamism > 0.2133476357884031;\nn:  12   win:  -74     if Culture > 0.2912324794924815\nn:   6   win:  -39     |  if Dynamism <= 0.2515830812032444;\nn:   6   win: -109     |  if Dynamism > 0.2515830812032444;\n\nUsed:  Dynamism Culture\nBest train: 81 hold-out: 83\n"
+    }
+  ]
+}
