@@ -20,7 +20,7 @@ This toolkit supports research on **multi-stakeholder decision-making in softwar
 ```
 Input Datasets (COCOMO/MOOT CSVs)
            ↓
-[1] tree_set_generation.py       → Generate N trees per dataset
+[1] run_ezr_batch.py       → Generate N trees per dataset
            ↓
 Output: EZR_trees/
 ├── <dataset>/trees.json
@@ -52,10 +52,8 @@ Output: EZR_trees/
 # Clone/download this repository
 cd ezr_stakeholders
 
-pip install -r requirements.txt
-
 # No additional setup needed—EZR auto-installs
-python tree_set_generation.py --folder ./data --runs 10 --seed 42
+python run_ezr_batch.py --folder ./data --runs 10 --seed 42
 ```
 
 ## Usage
@@ -65,7 +63,7 @@ python tree_set_generation.py --folder ./data --runs 10 --seed 42
 Run EZR N times on all CSV files in a folder:
 
 ```bash
-python tree_set_generation.py \
+python run_ezr_batch.py \
   --folder ./moot_data \
   --runs 500 \
   --seed 42
@@ -74,7 +72,7 @@ python tree_set_generation.py \
 **Parameters:**
 - `--folder`: Path to folder containing CSV files
 - `--runs`: Number of times to run EZR per file (default: 500)
-- `--seed`: Base random seed (each run uses seed + run_number, default: 1)
+- `--seed`: Base random seed (each run uses seed + run_number, default: 42)
 
 **Output:** `EZR_trees/` folder with per-dataset subfolders:
 ```
@@ -153,8 +151,6 @@ Stability = min(feature_frequencies) / num_runs * 100
 
 A tree is only as stable as its least-stable feature. This conservative metric ensures all constituent features have demonstrated reliability.
 
-**Reference:** [Donnelly et al. (2023)](https://arxiv.org/abs/2309.13775) - *The Rashomon Importance Distribution: Getting RID of Unstable, Single Model-based Variable Importance*
-
 ### Stability (Option B)
 **Definition:** Per-feature stability showing how often each attribute appears in the population of trees.
 
@@ -163,8 +159,6 @@ Feature Stability = count(trees containing feature) / total_trees * 100
 ```
 
 Useful for identifying core stable features that consistently matter across the Rashomon set.
-
-**Reference:** [Paul, Verleysen & Dupont (2012)](https://www.esann.org/proceedings/2012) - *The stability of feature selection and class prediction from ensemble tree classifiers*
 
 ### Complexity
 **Definition:** Normalized composite score combining tree depth and feature count.
@@ -178,8 +172,6 @@ Where:
   k = 1.0 (equal weighting)
 ```
 
-**Reference:** [Souza et al. (2022)](https://openreview.net/forum?id=w5ML0jjptL) - *Decision Trees with Short Explainable Rules* (NeurIPS)
-
 ### Pareto Frontier
 A tree is **non-dominated** (on the frontier) if no other tree is simultaneously:
 - Higher accuracy
@@ -187,8 +179,6 @@ A tree is **non-dominated** (on the frontier) if no other tree is simultaneously
 - Lower complexity
 
 The frontier represents the optimal trade-off space for stakeholders to choose from.
-
-**Reference:** [Xin et al. (2022)](https://openreview.net/forum?id=aU5f4OWEg5) - *Exploring the Whole Rashomon Set of Sparse Decision Trees* (NeurIPS)
 
 ## Output Format: Formatted Summaries
 
@@ -263,7 +253,7 @@ This toolkit supports research on **multi-stakeholder decision-making in SE**, e
 
 ```bash
 # 1. Generate 500 trees per dataset
-python tree_set_generation.py --folder ./moot_data --runs 500 --seed 42
+python run_ezr_batch.py --folder ./moot_data --runs 500 --seed 42
 
 # 2. Find Pareto frontiers (3 objectives: accuracy, stability, complexity)
 python pareto_frontier.py --folder ./EZR_trees_500
@@ -288,29 +278,6 @@ EZR_trees_500/
 └── ... (8 more datasets)
 ```
 
-**Related foundational work:**
-- [Menzies (2005)](https://ieeexplore.ieee.org/document/5431782) - *Explaining the Value of Software Process Alignment*
-- [Rashomon Effect](https://arxiv.org/abs/2407.04846) - Understanding multiple explanations for the same data
-
-## Key References
-
-- **Pareto Frontier & Rashomon Sets:** 
-  - [Xin et al. (2022)](https://openreview.net/forum?id=aU5f4OWEg5) - *Exploring the Whole Rashomon Set of Sparse Decision Trees*
-  - [Semenova et al. (2021)](https://arxiv.org/abs/2106.01341) - *A Framework for Interdisciplinary Methods in Interpretable ML*
-
-- **Variable Importance Stability:** 
-  - [Donnelly et al. (2023)](https://arxiv.org/abs/2309.13775) - *The Rashomon Importance Distribution: Getting RID of Unstable Variable Importance*
-
-- **Complexity Metrics:** 
-  - [Souza et al. (2022)](https://openreview.net/forum?id=w5ML0jjptL) - *Decision Trees with Short Explainable Rules*
-  - [Molnar, König & Bischl (2020)](https://arxiv.org/abs/2010.09337) - *Interpretable Machine Learning: Fundamental Principles and 10 Grand Challenges*
-
-- **Human-Centered XAI:** 
-  - [Liao & Vaughan (2024)](https://arxiv.org/abs/2404.06917) - *Explaining Explanations: An Overview of Interpretability of Machine Learning*
-
-- **GenderMag Personas:** 
-  - [Burnett et al. (2016)](https://doi.org/10.1145/2896966) - *GenderMag: A Method for Evaluating Software Design Inclusivity*
-
 ## License
 
 This project is part of academic research. See LICENSE for details.
@@ -318,5 +285,3 @@ This project is part of academic research. See LICENSE for details.
 ## Contact
 
 For questions or issues, please open an issue or contact the research team.
-
----
