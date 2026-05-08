@@ -3,7 +3,7 @@
 Run EZR multiple times on datasets and collect results in JSON format with stability analysis.
 
 Usage:
-    python run_ezr_batch.py --folder /path/to/data --runs 50
+    python tree_set_generation.py --folder /path/to/data --runs 50
 
 Outputs:
     EZR_trees/<datasetname>/
@@ -224,8 +224,8 @@ def main():
     parser.add_argument(
         "--seed",
         type=int,
-        default=42,
-        help="Base random seed (each run uses seed + run_number). Default: 42"
+        default=1,
+        help="Base random seed (each run uses seed + run_number). Default: 1"
     )
     
     args = parser.parse_args()
